@@ -616,7 +616,7 @@ objects:
   metadata:
     name: install-catalog
   spec:
-    activeDeadlineSeconds: 600
+    activeDeadlineSeconds: 1200
     template:
       metadata:
         name: install-catalog
