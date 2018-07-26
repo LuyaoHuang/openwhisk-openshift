@@ -22,15 +22,15 @@ parameters:
   required: true
 - name: CONTROLLER_MEMORY_REQUEST
   description: The minimum container memory for each Controller
-  value: "512Mi"
+  value: "1G"
   required: true
 - name: CONTROLLER_MEMORY_LIMIT
   description: The maximum container memory for each Controller
-  value: "512Mi"
+  value: "1G"
   required: true
 - name: CONTROLLER_JAVA_OPTS
   description: JVM options to pass to the Controller - recommended to set at least Xmx here
-  value: "-Xmx256m"
+  value: "-Xmx512m"
   required: true
 - name: CONTROLLER_HA
   description: Boolean denoting whether HA mode
@@ -102,11 +102,11 @@ parameters:
   required: true
 - name: COUCHDB_MEMORY_REQUEST
   description: The minimum container memory for each CouchDB
-  value: "256Mi"
+  value: "512Mi"
   required: true
 - name: COUCHDB_MEMORY_LIMIT
   description: The maximum container memory for each CouchDB
-  value: "512Mi"
+  value: "1G"
   required: true
 - name: COUCHDB_USER
   description: CouchDB Username
@@ -192,7 +192,7 @@ parameters:
   required: true
 - name: WHISK_ACTIONS_MEMORY_STD
   description: Default memory an action requests if unspecified.
-  value: "256 m"
+  value: "1024 m"
   required: true
 - name: WHISK_KAFKA_REPLICATION_FACTOR
   description: Replication factor for all OpenWhisk topics
