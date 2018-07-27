@@ -78,7 +78,7 @@ parameters:
   required: true
 - name : INVOKER_CONTAINER_TIMEOUT
   description: Maximum time an idle function container should stick around before the Invoker deletes it. The longer the timeout, the longer functions stay warm. The shorter the timeout, the less resources consumed by idle function containers. Example values - "5 minutes", "30 seconds", etc.
-  value: "2 minutes"
+  value: "60 minutes"
   required: true
 - name: INVOKER_CONTAINER_PAUSE_TIMEOUT
   description: Maximum time an idle function container should stick around before the Invoker marks it as paused. Example values - "5 seconds", "500 milliseconds", etc.
