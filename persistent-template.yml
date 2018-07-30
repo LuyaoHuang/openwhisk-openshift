@@ -1274,7 +1274,7 @@ objects:
               fieldRef:
                 fieldPath: metadata.namespace
           - name: STRIMZI_OPERATION_TIMEOUT_MS
-            value: "600000"
+            value: "300000"
           livenessProbe:
             httpGet:
               path: /healthy
